@@ -11,7 +11,7 @@ function Header() {
     return (
         <header className='header-container'>
             <nav className="navbar">
-                <a href="#" id="logo">Logo</a>
+                <a href="#" id="logo">BIRZOOM</a>
                 <ul className="navbar-links">
                     <li><a href="#">Tariflar</a></li>
                     <li><a href="#">Kurs Haqida</a></li>

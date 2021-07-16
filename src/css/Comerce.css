@@ -1,0 +1,55 @@
+.comerce-container {
+    display: flex;
+    margin: 0 20px;
+    margin-top: 80px
+}
+
+.comerce-container img {
+    width: 50%;
+}
+
+.comerce-content {
+    text-align: right;
+    margin: auto 0
+}
+
+.comerce-content h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    color: #113DFF;
+}
+
+
+.comerce-content p {
+    font-family: "Numans", sans-serif;
+    line-height: 25px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.get-app {
+    margin-top: 30px;
+    width: 200px !important;
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 816px) {
+    .comerce-container {
+        flex-wrap: wrap
+    }
+    .comerce-container img {
+       width: 100%;  
+    }
+    .comerce-content {
+        text-align: center;
+    }
+    .comerce-content h1{
+        font-size: 30px
+    }
+    .get-app {
+        margin-top: 10px;
+        width: 150px !important
+    }
+}

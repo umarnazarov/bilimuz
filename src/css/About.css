@@ -1,4 +1,36 @@
+#c4, #c5, #c6 {
+    position: absolute;
+}
+
+#c4 {
+    top: 10px;
+    left: -60px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: #4264fd;
+}
+
+#c5 {
+    bottom: -50px;
+    left: 40%;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #4264fd;
+}
+
+#c6 {
+    top: 30px;
+    left: 85%;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    background-color: #4264fd;
+}
+
 .about-conteiner {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,11 +46,13 @@
 .about-cards {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px
+    margin-top: 30px;
+    justify-content: center;
 }
 
 .about-card {
-    box-shadow: 0 8px 20px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4.0px );
     -webkit-backdrop-filter: blur( 4.0px );
     border-radius: 10px;
@@ -31,9 +65,12 @@
     width: 300px;
     height: 300px;
     text-align: center;
-    flex-grow: 1;
-
 }
+
+.about-card:nth-child(2) {
+    transform: translateY(15px)
+}
+
 
 .card-font {
     font-size: 60px;
@@ -55,4 +92,17 @@
     margin-top: 20px;
     font-size: 15px;
     line-height: 20px
+}
+
+@media (max-width: 637px) {
+    #c6 {
+        left: 60%;
+        top:35%
+    }
+}
+
+@media (max-width: 960px) {
+    .about-card:nth-child(2) {
+        transform: translateY(0)
+    }
 }

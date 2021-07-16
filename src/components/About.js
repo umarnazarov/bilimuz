@@ -3,6 +3,9 @@ import "../css/About.css"
 function About() {
     return (
         <div className="about-conteiner">
+            <div id="c4"></div>
+            <div id="c5"></div>
+            <div id="c6"></div>
             <h1>Platforma haqida</h1>
             <div className="about-cards">
                 <div className="about-card">
