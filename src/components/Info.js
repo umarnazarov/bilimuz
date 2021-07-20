@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../css/Infos.css"
 
 function Infos({ props }) {
-    const { img, title, text, buttonText, textAlign, mainTitle, flexDirection } = props
+    const { img, title, text, buttonText, textAlign, mainTitle, flexDirection } = props;
     return (
         <div className="info-container">
             <h1 id="info-m-title">{mainTitle}</h1>

@@ -12,6 +12,20 @@ html {
     color: #FFFFFF;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #113DFF;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 25px;
+}
+
 .header-container {
     height: 100vh;
     margin: 0 20px
@@ -34,7 +48,7 @@ html {
     align-items: center;
     justify-content: space-between;
     padding-top: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Open Sans",sans-serif;
     font-weight: 400;
     opacity: 0;
     transform: translateY(-10px);
@@ -51,11 +65,12 @@ html {
 
 .navbar-links {
     display: flex;
+    font-family: "Open Sans",sans-serif
 }
 
 .navbar-links li {
     list-style: none;
-    font-size: 14.5px;
+    font-size: 15px;
     margin-right: 15px;
     letter-spacing: .5px;
 }
